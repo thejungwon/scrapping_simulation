@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>빅데이터 분석 프로그래밍</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>빅데이터 분석 프로그래밍 크롤링 테스트</h1>
+        <hr>
+        <div>
+            <h3>나는 보이지?</h3>
+        </div>
+        <div>
+            <h3 id="test"></h3>
+        </div>
+        <script>
+            $.get('/test',function(res){
+                $('#test').html(res)
+            })
+        </script>
+    </body>
+</html>
